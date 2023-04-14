@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico"/>
+    <title>Robotron 2000</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <main>
+        <section class="robotron">
+            <section class="botoes">
+                <button class="alterar rosa" data-imagem="rosa" data-fundo = "linear-gradient(45deg, #FDF4F5 10%,#E8A0BF 40%, #BA90C6 100%, #C0DBEA 60%)" >Rosa</button>
+                <button class="alterar amarelo" data-imagem="amarelo" data-fundo = "linear-gradient(45deg, rgba(241,229,236,1) 0%, rgba(244,185,13,1) 49%, rgba(197,212,67,1) 90%)" >Amarelo</button>
+                <button class="alterar azul" data-imagem="azul" data-fundo = "linear-gradient(45deg, rgba(201,199,232,1) 0%, rgba(46,69,233,1) 43%, rgba(94,101,189,1) 90%)">Azul</button>
+                <button class="alterar branco" data-imagem="branco" data-fundo = "linear-gradient(45deg, rgba(241,229,236,1) 0%, rgba(231,231,231,1) 49%, rgba(209,209,209,1) 90%)">Branco</button>
+                <button class="alterar vermelho" data-imagem="vermelho" data-fundo = "linear-gradient(45deg, rgba(241,229,236,1) 0%, rgba(233,46,67,1) 43%, rgba(189,94,94,1) 90%)"  >Vermelho</button>
+                <button class="alterar preto" data-imagem="preto" data-fundo = "linear-gradient(45deg, rgba(244,244,244,1) 0%, rgba(75,68,68,1) 49%, rgba(73,73,72,1) 90%)">Preto</button>
+
+            </section>
+            <img class="robo" src="img/robotron-rosa.png" alt="Robotron" id="robotron">
+            <figcaption class="titulo">STHERZADA<br>2000</figcaption>
+        </section>
+
+        <section class="box estatisticas">
+            <div class="estatistica">
+                <p class="estatistica-titulo">Força</p>
+                <div class="estatistica-valor">
+                    <p class="estatistica-numero" data-estatistica = "forca">768</p>
+                </div>
+            </div>
+            <div class="estatistica">
+                <p class="estatistica-titulo">Poder</p>
+                <div class="estatistica-valor">
+                    <p class="estatistica-numero" data-estatistica = "poder" >630</p>
+                </div>
+            </div>
+            <div class="estatistica">
+                <p class="estatistica-titulo">Energia</p>
+                <div class="estatistica-valor">
+                    <p class="estatistica-numero" data-estatistica = "energia" >289</p>
+                </div>
+            </div>
+            <div class="estatistica">
+                <p class="estatistica-titulo">Velocidade</p>
+                <div class="estatistica-valor">
+                    <p class="estatistica-numero"data-estatistica = "velocidade">597</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="equipamentos">
+            <form action="" class="montador">
+                <div class="box montador-conteudo">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Braços</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-controle="-" data-peca = "bracos">-</buttom>
+                            <input type="text" class="controle-contador" value="00" data-contador>
+                            <buttom class="controle-ajuste" data-controle="+" data-peca = "bracos">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Blindagem</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-controle="-" data-peca = "blindagem">-</buttom>
+                            <input type="text" class="controle-contador" value="00" data-contador>
+                            <buttom class="controle-ajuste" data-controle="+" data-peca = "blindagem">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Núcleos</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-controle="-" data-peca = "nucleos">-</buttom>
+                            <input type="text" class="controle-contador" value="00" data-contador>
+                            <buttom class="controle-ajuste" data-controle="+" data-peca = "nucleos">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Pernas</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-controle="-" data-peca = "pernas">-</buttom>
+                            <input type="text" class="controle-contador" value="00" data-contador>
+                            <buttom class="controle-ajuste" data-controle="+" data-peca = "pernas">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Foguetes</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-controle="-" data-peca = "foguetes">-</buttom>
+                            <input type="text" class="controle-contador" value="00" data-contador>
+                            <buttom class="controle-ajuste" data-controle="+" data-peca = "foguetes">+</buttom>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="Iniciar produção" class="producao" id="producao">
+
+                <script src="main.js"></script>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
